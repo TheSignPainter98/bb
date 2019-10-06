@@ -22,7 +22,7 @@ git clone git@github.com:/TheSignPainter98/bb.git
 cd bb
 ```
 
-Check that the `INSTALL_LOCATION` has an acceptable install location (by default this is `~/.bin`), then run the following.
+Check that the `INSTALL_LOCATION` variable has an acceptable install value (by default this is `~/.bin`), then run the following.
 
 ```bash
 make
