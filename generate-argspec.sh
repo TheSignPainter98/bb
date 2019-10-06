@@ -22,5 +22,6 @@ echo "$helpOutput" | grep "^(" | while read h; do
 	first=0
 	echo -n "{\"short\": \"-$opt\", \"long\": \"--$opt\", \"type\": \"flag\", \"default\": \"False\", \"help\": \"$help\", \"mandatory\": false}"
 done
-echo -e "]"
+echo -e "],"
+echo '"examples": [{"input": "bb -cmd [args ...] [-cmd [args ...] ...]"}]'
 echo "}"
