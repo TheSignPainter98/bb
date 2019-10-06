@@ -13,12 +13,25 @@ bb --cmd1 args args ... --cmd2 args ...
 ```
 
 Commands `cmd` correspond exactly to those available from within the `startBB` batch environment.
-Args associate to the nearest command to the left
+Args associate to the nearest command to the left.
 
 ## Installation
 
 ```bash
 git clone git@github.com:/TheSignPainter98/bb.git
 cd bb
+```
+
+Check that the `INSTALL_LOCATION` has an acceptable install location (by default this is `~/.bin`), then run the following.
+
+```bash
 make
+```
+
+### Uninstallation
+
+To uninstall, simply run:
+
+```bash
+make clean
 ```
