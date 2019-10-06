@@ -10,6 +10,6 @@ first=1
 		first=0
 		echo -n "$f " | sed 's/^-*//'
 	else
-		echo -n "$f"
+		echo -n "$f "
 	fi
-done && echo) | startBB
+done && echo) | tee /dev/stderr | startBB
