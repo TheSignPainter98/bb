@@ -1,9 +1,15 @@
 #!/bin/zsh
 
-for f in $*; do
+first=1
+
+(for f in $*; do
 	if [[ "$f" == -* ]]; then
-		echo "$f" | sed 's/^-*//'
+		if [[ "$first" == "0" ]]; then
+			echo
+		fi
+		first=0
+		echo -n "$f " | sed 's/^-*//'
 	else
-		echo "$f"
+		echo -n "$f"
 	fi
-done | startBB
+done && echo) | startBB
