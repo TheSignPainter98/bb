@@ -1,8 +1,10 @@
 #!/usr/bin/make
 
-install: ~/.bin/bb
+INSTALL_LOCATION := ~/.bin
 
-~/.bin/bb: ./bb
+install: $(INSTALL_LOCATION)/bb
+
+$(INSTALL_LOCATION)/bb: ./bb
 	install -m 755 $^ $@
 
 ./bb:;
