@@ -12,4 +12,4 @@ first=1
 	else
 		echo -n "$f "
 	fi
-done && echo) | tee /dev/stderr | startBB
+done && echo) | startBB
